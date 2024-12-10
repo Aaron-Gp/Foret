@@ -4,7 +4,7 @@
       class="relative h-full flex flex-col justify-center bg-no-repeat bg-cover"
       style=""
       :style="{
-        backgroundImage: 'url(' + bg + ')',
+        backgroundImage: 'url(' + baseURL() + bg + ')',
         backgroundPosition: 'center center',
       }"
     >

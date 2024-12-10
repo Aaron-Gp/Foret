@@ -1,1 +1,0 @@
-import{b as r}from"./baseurl.e24ef428.js";import"./entry.76fda3ea.js";const e=s=>s.replaceAll('<img src="','<img src="'+r()),i=""+globalThis.__publicAssetsURL("images/long_cover.jpg"),l=""+globalThis.__publicAssetsURL("textures/slider-overly.svg");export{i as _,l as a,e as f};

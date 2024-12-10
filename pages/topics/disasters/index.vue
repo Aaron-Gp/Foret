@@ -3,7 +3,7 @@
     <div class="relative h-full">
       <div
         class="text-white relative bg-secondary font-black banner-follow fadeInDown visible"
-        :style="{ backgroundImage: 'url(' + store.bg + ')' }"
+        :style="{ backgroundImage: 'url(' + baseURL() + store.bg + ')' }"
       >
         <div class="max-w-max px-6 pt-6 pb-6 mx-auto">
           <!-- 面包屑 -->
