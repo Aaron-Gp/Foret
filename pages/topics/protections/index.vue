@@ -71,7 +71,7 @@
                     <template #cover>
                       <img
                         class="object-cover max-w-full object-center w-full"
-                        :src="page.cover"
+                        :src="baseURL() + page.cover"
                       />
                     </template>
                     {{ page.desc }}

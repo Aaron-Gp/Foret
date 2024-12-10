@@ -52,7 +52,7 @@
             class="xl:pb-[3rem] xl:mb-[3rem] md:pb-[2rem] md:mb-[2rem] pb-[1rem] mb-[1rem] fadeInUp"
             id="artContent"
             style="visibility: visible; animation-name: fadeInUp"
-            v-html="store.content"
+            v-html="filtImg(store.content)"
           ></main>
           <div class="text-right mb-20">
             <a class="back" href="javascript:history.go(-1);">返回</a>

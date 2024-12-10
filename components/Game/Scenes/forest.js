@@ -24,7 +24,7 @@ export default class Game {
 		// this.app.resizeTo=(el.width, el.height);
 		// const width = window.innerWidth;
 		// const height = window.innerHeight;
-		const baseTexture = PIXI.BaseTexture.from("/textures/dino.png")
+		const baseTexture = PIXI.BaseTexture.from(baseURL() + "/textures/dino.png")
 		const dinoTexture = new PIXI.Texture(
 			baseTexture,
 			new PIXI.Rectangle(848, 2, 44, 47)
@@ -41,13 +41,13 @@ export default class Game {
 		const container1 = new PIXI.Container()
 		app.stage.addChild(container1)
 
-		const disasters = PIXI.Sprite.from("/images/disasters/1_3.jpg")
+		const disasters = PIXI.Sprite.from(baseURL() + "/images/disasters/1_3.jpg")
 		disasters.width = width
 		disasters.height = height
 		// console.log(width, height)
 		container1.addChild(disasters)
 
-		const disasters_finish = PIXI.Sprite.from("/images/disasters/1_2.jpg")
+		const disasters_finish = PIXI.Sprite.from(baseURL() + "/images/disasters/1_2.jpg")
 		disasters_finish.width = width
 		disasters_finish.height = height
 		// console.log(width, height)
@@ -530,7 +530,7 @@ export default class Game {
 				container2.addChild(b6)
 				b6.eventMode = "static"
 				b6.on("click", () => {
-					window.location.assign("/topics")
+					window.location.assign(baseURL() + "/topics")
 				})
 			} else {
 				b5 = new PIXI.Text("答错了！", {
@@ -555,7 +555,8 @@ export default class Game {
 				container2.addChild(b6)
 				b6.eventMode = "static"
 				b6.on("click", () => {
-					window.location.assign(window.location.pathname + "topics/disasters/1")
+					// console.log(baseURL() + "dddd")
+					window.location.assign(baseURL() + "/topics/disasters/1")
 				})
 			}
 		})
