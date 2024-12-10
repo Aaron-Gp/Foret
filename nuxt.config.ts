@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: "/Foret/",
+
+    buildAssetsDir: "/static/",
     head: {
       title: "FORÊT",
       htmlAttrs: {
